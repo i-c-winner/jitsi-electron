@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 
 export default styled.div`
-    background: #1754A9;
+    background: #fff;
     border-radius: 0.5em;
-    color: white;
+    color: #000;
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr auto;

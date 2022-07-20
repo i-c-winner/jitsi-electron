@@ -5,7 +5,6 @@ import { FieldTextStateless } from '@atlaskit/field-text';
 import { SpotlightTarget } from '@atlaskit/onboarding';
 import Page from '@atlaskit/page';
 import { AtlasKitThemeProvider } from '@atlaskit/theme';
-
 import { generateRoomWithoutSeparator } from '@jitsi/js-utils/random';
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
@@ -267,7 +266,7 @@ class Welcome extends Component<Props, State> {
                         <Label>{ t('enterConferenceNameOrUrl') } </Label>
                         <FieldWrapper>
                             <FieldTextStateless
-                                autoFocus = { true }
+                                autoFocus = { false }
                                 isInvalid = { locationError }
                                 isLabelHidden = { true }
                                 onChange = { this._onURLChange }
@@ -275,12 +274,16 @@ class Welcome extends Component<Props, State> {
                                 shouldFitContainer = { true }
                                 type = 'text'
                                 value = { this.state.url } />
-                            <Button
-                                appearance = 'primary'
-                                onClick = { this._onJoin }
-                                type = 'button'>
-                                { t('go') }
-                            </Button>
+                            <div style={{marginLeft: "20px"}}>
+                                <Button
+
+                                    appearance = 'danger'
+                                    onClick = { this._onJoin }
+                                    type = 'button'>
+                                    { t('go') }
+                                </Button>
+                            </div>
+
                         </FieldWrapper>
                     </Form>
                 </SpotlightTarget>
