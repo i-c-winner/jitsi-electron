@@ -92,7 +92,7 @@ class App extends Component<*> {
      */
     render() {
         return (
-            <AtlasKitThemeProvider mode = 'dark'>
+            <AtlasKitThemeProvider mode = 'light'>
                 <Router history = { history }>
                     <Switch>
                         <Route

@@ -17,10 +17,13 @@ export default class Logo extends Component<*> {
      * @returns {ReactElement}
      */
     render() {
+
+
         return (
             <Icon
                 glyph = { LogoSVG }
-                size = 'xlarge' />
+                size = 'medium' />
+
         );
     }
 }

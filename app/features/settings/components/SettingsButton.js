@@ -1,6 +1,6 @@
 // @flow
 
-import SettingsIcon from '@atlaskit/icon/glyph/settings';
+import MenuIcon from '@atlaskit/icon/glyph/menu';
 import { SpotlightTarget } from '@atlaskit/onboarding';
 
 import * as Mousetrap from 'mousetrap';
@@ -66,10 +66,11 @@ class SettingsButton extends Component<Props, *> {
      * @returns {ReactElement}
      */
     render() {
+
         return (
             <SpotlightTarget
                 name = 'settings-drawer-button'>
-                <SettingsIcon
+                <MenuIcon
                     onClick = { this._onIconClick } />
             </SpotlightTarget>
         );

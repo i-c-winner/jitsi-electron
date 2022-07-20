@@ -64,7 +64,7 @@ class Navbar extends Component<Props, *> {
                 ] }
                 globalPrimaryActions = { this._getPrimaryActions() }
                 globalPrimaryIcon = { <Logo /> }
-                globalSecondaryActions = { this._getSecondaryActions() }
+                // globalSecondaryActions = { this._getSecondaryActions() }
                 isOpen = { false }
                 isResizeable = { false } />
         );
