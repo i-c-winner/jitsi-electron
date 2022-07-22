@@ -29,8 +29,8 @@ jobs:
       with:
         name: linux-binaries
         path: |
-          dist/jitsi-meet-amd64.deb
-          dist/jitsi-meet-x86_64.AppImage
+          dist/communication-amd64.deb
+          dist/communication-x86_64.AppImage
           dist/latest-linux.yml
   build-mac:
     name: macOS
@@ -61,9 +61,9 @@ jobs:
       with:
         name: mac-binaries
         path: |
-          dist/jitsi-meet.dmg
-          dist/jitsi-meet.zip
-          dist/latest-mac.yml
+          dist/communication.dmg
+          dist/communication.zip
+          dist/communication.yml
   build-windows:
     name: Windows
     runs-on: windows-2022
@@ -82,5 +82,5 @@ jobs:
       with:
         name: windows-binaries
         path: |
-          dist/jitsi-meet.exe
+          dist/glagol.exe
           dist/latest.yml

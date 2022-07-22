@@ -3,7 +3,7 @@
   "version": "2022.6.1",
   "description": "Electron application for Jitsi Meet",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "Communication CS",
   "private": true,
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
@@ -19,7 +19,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "Communication CS",
     "generateUpdatesFilesForAllChannels": true,
     "afterSign": "./notarize.js",
     "files": [
@@ -87,7 +87,7 @@
       ]
     },
     "win": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "communucationCS.${ext}",
       "target": [
         {
           "arch": [
