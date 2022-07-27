@@ -80,7 +80,14 @@ class SettingsDrawer extends Component<Props, *> {
      */
     render() {
         const { t } = this.props;
-
+        const styleButtons = {
+            display: 'flex',
+            flexFlow: 'column'
+        };
+        const styleButton={
+            marginTop: '15px',
+            padding: '5px'
+        };
         return (
             <AkCustomDrawer
                 backIcon = { <ArrowLeft label = { t('settings.back') } /> }
@@ -107,6 +114,11 @@ class SettingsDrawer extends Component<Props, *> {
                                 label = { t('settings.disableAGC') }
                                 settingChangeEvent = { setDisableAGC }
                                 settingName = 'disableAGC' />
+                            <div className = 'buttons' style={styleButtons}>
+                                <button className = 'button' style={styleButton}>Загрузить файл</button>
+                                <button className = 'button' style={styleButton}>Распознать файл</button>
+                                <button className = 'button' style={styleButton}>Удалить файл</button>
+                            </div>
                         </TogglesContainer>
                         <Onboarding section = 'settings-drawer' />
                     </SettingsContainer>
