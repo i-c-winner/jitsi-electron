@@ -29,7 +29,8 @@
       "!main.js"
     ],
     "mac": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "Communications.${ext}",
+      "icon": "",
       "target": [
         {
           "arch": "universal",
@@ -58,13 +59,14 @@
       "hardenedRuntime": false
     },
     "linux": {
-      "artifactName": "jitsi-meet-${arch}.${ext}",
+      "artifactName": "Comminications-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
+      "description": "Communication CS",
       "desktop": {
         "Comment[hu]": "Asztali Jitsi Meet-alkalmazás"
       },
-      "executableName": "jitsi-meet",
+      "executableName": "Comminications",
+      "icon": "",
       "target": [
         {
           "arch": "x64",
@@ -88,6 +90,7 @@
     },
     "win": {
       "artifactName": "communucationCS.${ext}",
+      "icon": "",
       "target": [
         {
           "arch": [
@@ -106,7 +109,7 @@
         "name": "jitsi-protocol",
         "role": "Viewer",
         "schemes": [
-          "jitsi-meet"
+          "Communications CS"
         ]
       }
     ]
