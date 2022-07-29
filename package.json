@@ -128,7 +128,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "CSoft-Dev",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {

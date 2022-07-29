@@ -171,6 +171,7 @@ function createJitsiMeetWindow() {
 
     // Check for Updates.
     if (!process.mas) {
+
         autoUpdater.checkForUpdatesAndNotify();
     }
 
